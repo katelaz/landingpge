@@ -1,0 +1,273 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 15px;
+}
+body{
+	margin: 0;
+	color: #777;
+	font-family: 'Open Sans', sans-serif;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+a:hover, a:active{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+img {
+	max-width: 100%;
+}
+button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+/* Grid layout start */
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: auto;
+}
+.container-fluid {
+	padding: 0 15px;
+}
+.row {
+	margin: 0 -15px;
+}
+.row::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.col {
+	float: left;
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.col-1{
+	width: 8.333333333%
+}
+.col-2{
+	width: 16.666666667%
+}
+.col-3{
+	width: 25%
+}
+.col-4{
+	width: 33.333333333%
+}
+.col-5{
+	width: 41.666666667%
+}
+.col-6{
+	width: 50%
+}
+.col-7{
+	width: 58.333333333%
+}
+.col-8{
+	width: 66.666666667%
+}
+.col-9{
+	width: 75%
+}
+.col-10{
+	width: 83.333333333%
+}
+.col-11{
+	width: 91.666666667%
+}
+.col-12{
+	width: 100%
+}
+/* Grid layout end */
+/* Default classes start */
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.bg-black {
+	background-color: #111;
+}
+/* Default classes end */
+/* Default component start */
+.default-section {
+	padding: 135px 0;
+}
+.default-text {
+	font-family: 'Open Sans light', sans-serif;
+	line-height: 26px;
+}
+.btn {
+	display: inline-block;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 26px;
+	border-radius: 2px;
+	text-align: center;
+}
+.btn-default {
+	color: #fff;
+	letter-spacing: 0.2em;
+	border: solid;
+	background: #111;
+
+}
+.btn-large {
+	color: #111;
+	background: #cfcfcf;
+	padding: 0 40px;
+}
+.btn-small {
+	font-size: 11px;
+	padding: 0 15px;
+	background: #e5e5e5;
+	color: #111;
+
+}
+
+.title {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	color: #111;
+	letter-spacing: .5em;
+	font-weight: normal;
+	margin-bottom: 75px;
+}
+.title.title-light {
+	letter-spacing: .3em;
+}
+.title.title-white {
+	color: #fff;
+}
+
+/* Default component end */
+/* Custom style start */
+/*header start*/
+#header {
+	position: fixed;
+	overflow: hidden;
+	height: 70px;
+	width: 100%;
+	padding: 30px;
+	font-family: 'Open Sans', sans-serif;
+}
+#header .logo {
+	float: left;
+}
+#header .nav-menu {
+	float: right;
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 0.3em;
+	color: rgba(255, 255, 255, .75);
+	line-height: 45px;
+}
+#header .nav-menu li {
+	float: left;
+}
+#header .nav-menu li + li {
+	margin-left: 34px;
+}
+
+/*header end*/
+/*inner start*/
+.inner {
+	background-image: url("../img/header-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 100vh;
+	padding: 70px;
+	color: rgba(255, 255, 255, .68);
+}
+
+.letter-spacing {
+	letter-spacing: 1.7em;
+	text-indent: 1.7 em;
+}
+h1.letter-spacing {
+	margin-bottom: 100px;
+	margin-top: 200px;
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, .9);
+}
+span.text-light {
+	font-family: 'Open Sans light', sans-serif;
+}
+/*inner end*/
+/* ===== About studio start ===== */
+.about-studio .row + .row {
+	margin-top: 100px;
+}
+.team-item-info {
+	margin-bottom: 140px;
+	font-family: 'Dosis', sans-serif;
+}
+.team-item-info span {
+	display: block;
+	line-height: 30px;
+	text-transform: uppercase;
+	letter-spacing: 0.4em;
+}
+.team-item-role {
+	font-size: 12px;
+}
+span.quote {
+	text-transform: uppercase;
+	margin-top: 30px;
+	font-size: 11px;
+}
+blockquote {
+	font-size: 24px;
+}
+
+/* ===== About studio end ===== */
+/* ===== Lets talk start ===== */
+.lets-talk-wrapper {
+	padding-top: 140px;
+	padding-bottom: 140px;
+}
+.lets-talk-img {
+	margin-top: -32px;
+}
+.lets-talk.default-text {
+	color: rgba(255, 255, 255, .7);
+}
+h3.title {
+	font-family: 'Dosis', sans-serif;
+	margin-bottom: 20px;
+}
+/* ===== Lets talk end ===== */
+/* =====why chose us start ===== */
+.advantage-title {
+	font-size: 14px;
+	line-height: 26px;
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+}
+.advantage-icon {
+	font-size: 48px;
+	margin-top: 80px;
+}
+.margin-top {
+	margin-top: -170px;
+}
+.lets-talk-wrapper p {
+	margin-bottom: 40px;
+}
+/*why chose us end */
+/* Custom style end */
